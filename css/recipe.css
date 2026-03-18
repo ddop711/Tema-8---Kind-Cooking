@@ -1,3 +1,22 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: #f5f2ef;
+}
+
+#recipe-detail {
+  padding: 20px;
+}
+
+#recipe-detail img {
+  width: 100%;
+}
+
+.section-title {
+  background: #c97c6d;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
 /***** Background Color *****/
 
 .bgColor {
