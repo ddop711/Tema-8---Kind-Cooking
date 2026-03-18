@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* MOBILE FIRST */
+.wrapper {
+  padding: 2rem 1.2rem;
+}
+
+.text {
+  max-width: 520px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+/* CTA BOX */
+.cta {
+  margin-top: 2.5rem;
+  background-color: #9c6f62;
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 1.5px;
+}
+
+/* BUTTON */
+.cta button {
+  background-color: #e7e2dc;
+  border: none;
+  padding: 0.9rem 3rem;
+  border-radius: 40px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* DESKTOP */
+@media (min-width: 900px) {
+  .wrapper {
+    padding: 4rem 6rem;
+  }
+
+  .text {
+    max-width: 700px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .cta {
+    max-width: 700px;
+    padding: 3rem;
+  }
+}
