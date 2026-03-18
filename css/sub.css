@@ -9,6 +9,11 @@
   padding: 2rem 1.2rem;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .text {
   max-width: 520px;
 }
@@ -17,6 +22,7 @@ h1 {
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 p {
