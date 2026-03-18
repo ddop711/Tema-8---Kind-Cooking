@@ -17,7 +17,7 @@ body {
   color: white;
   padding: 10px;
   margin-top: 20px;
-<<<<<<< HEAD
+}
 /***** Background Color *****/
 
 .bgColor {
@@ -93,6 +93,4 @@ h3 {
 
 .card {
   justify-items: center;
-=======
->>>>>>> e910c4b (dynamic done)
 }

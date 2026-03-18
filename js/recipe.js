@@ -1,12 +1,7 @@
 const detail = document.getElementById("recipe-detail");
 
-<<<<<<< HEAD
-const params = new URLSearchParams(window.location.search);
-=======
-// hent id fra URL
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
->>>>>>> e910c4b (dynamic done)
 
 fetch(`https://dummyjson.com/recipes/${id}`)
   .then((res) => res.json())
