@@ -1,0 +1,61 @@
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.logo_img {
+  width: 25%;
+  display: grid;
+  place-content: right;
+}
+
+main {
+  background-color: var(--white);
+  color: #262c24;
+}
+
+.title_logo {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin: 1.5rem;
+}
+
+.about_us_textbox {
+  margin: 1.5rem;
+}
+
+.wefood_textbox {
+  margin: 1.5rem;
+}
+
+.subscribtion_info_textbox {
+  margin: 1.5rem;
+}
+
+.subscribtion_btn {
+  margin: 1.5rem;
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color: var(--brown);
+  color: var(--white);
+  padding: min(3em, 6%);
+  border-radius: 0.5rem;
+}
+
+.sub_link_to_btn {
+  background-color: #fdf3e8;
+  color: #262c24;
+  display: grid;
+  place-content: center;
+  margin-top: 0.5rem;
+  padding: min(3em, 6%);
+  border-radius: 5rem;
+}
+
+.screenbreak_solid_color {
+  background-color: var(--brown);
+  padding: 5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
