@@ -8,6 +8,7 @@ img {
   width: 25%;
   display: grid;
   place-content: right;
+  justify-self: end;
 }
 
 main {
@@ -17,24 +18,26 @@ main {
 
 .title_logo {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: auto auto;
   margin: 1.5rem;
 }
 
 .about_us_textbox {
   margin: 1.5rem;
+  max-width: 65ch;
 }
 
 .wefood_textbox {
   margin: 1.5rem;
+  max-width: 65ch;
 }
 
 .subscribtion_info_textbox {
   margin: 1.5rem;
+  max-width: 65ch;
 }
 
 .subscribtion_btn {
-  margin: 1.5rem;
   margin-left: 15%;
   margin-right: 15%;
   background-color: var(--brown);
@@ -51,6 +54,8 @@ main {
   margin-top: 0.5rem;
   padding: min(3em, 6%);
   border-radius: 5rem;
+  font-family: Afacad;
+  font-weight: 100;
 }
 
 .screenbreak_solid_color {
@@ -58,4 +63,19 @@ main {
   padding: 5rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.kind_cooking {
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.wefood_link {
+  font-family: Afacad;
+  font-weight: 100;
+}
+
+body {
+  background-color: var(--white);
 }
