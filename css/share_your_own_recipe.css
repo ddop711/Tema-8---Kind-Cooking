@@ -1,50 +1,63 @@
-body {
-  font-family: sans-serif;
-  margin: 0;
-  background: #f5f2ef;
+/***** Background Color *****/
+
+.bgColor {
+  background-color: #fefbf6;
 }
+
+/***** Share Recipes *****/
 
 h1 {
   text-align: center;
-  padding: 20px;
+  padding-bottom: 1rem;
 }
 
-#recipe-detail img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
+.recipedescription {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  justify-self: center;
+  padding-bottom: 2rem;
 }
 
-#recipe-detail {
-  padding: 20px;
+.list {
+  padding-left: 2.5rem;
+  color: #fefbf6;
 }
 
-.recipe-content {
+.Recipeform {
+  background-color: #9e7267;
+  width: 320px;
+  justify-self: center;
+}
+
+#ingredients {
+  background-color: #fefbf6;
+  border-radius: 0.4rem;
+  border: none;
+  height: 1.7rem;
+  width: 180px;
+  margin: 0 auto;
+
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 0.4rem;
 }
 
-.section-title {
-  background: #c97c6d;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  color: black;
+.sub {
+  margin-left: 4rem;
+  color: #fefbf6;
 }
 
-.section-title p {
-  background-color: #d9b2a9;
-  padding: 5px;
-  border-radius: 5px;
+h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.4rem;
 }
 
-.ingredients ul {
-  padding-left: 20px;
-}
-
-.instructions p {
-  line-height: 1.6;
+.h2white {
+  color: #fefbf6;
+  padding-left: 2.5rem;
+  padding-top: 2rem;
 }
 
 .button {
@@ -62,15 +75,14 @@ h1 {
   font-size: 1rem;
 }
 
-@media (min-width: 900px) {
-  .recipe-content {
-    flex-direction: row;
-  }
+.bottomtext {
+  padding: 2rem;
+  color: white;
+  opacity: 50%;
+}
 
-  .ingredients,
-  .instructions {
-    width: 50%;
-  }
+.card {
+  justify-items: center;
 }
 
 * {
