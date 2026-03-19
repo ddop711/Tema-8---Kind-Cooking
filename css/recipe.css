@@ -62,7 +62,17 @@ h3 {
 
 .button {
   display: flex;
+  justify-self: center;
+  height: 2.5rem;
+  width: 110px;
+  margin-top: 2rem;
+  align-items: center;
   justify-content: center;
+  border-radius: 2rem;
+  border: none;
+  background-color: #fefbf6;
+  font-family: Afacad;
+  font-size: 1rem;
 }
 
 .bottomtext {
@@ -73,4 +83,163 @@ h3 {
 
 .card {
   justify-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.exampleimage {
+  width: 250px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 4.5rem;
+  font-family: Afacad;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.instruction {
+  background-color: #d38275;
+  color: #fefbf6;
+  width: 250px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.lorem {
+  width: 250px;
+  justify-self: center;
+  padding: 1rem;
+}
+
+.teksth1 {
+  padding-top: 2rem;
+}
+
+.examplecard {
+  background-color: #deebee;
+  width: 320px;
+  justify-self: center;
+}
+
+.pizza {
+  width: 250px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.namedish {
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+@media (min-width: 900px) {
+  h1 {
+    padding-bottom: 1rem;
+  }
+
+  @media (min-width: 700px) {
+    .examplecard {
+      width: 800px;
+      margin-bottom: 6rem;
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: #262c24;
+    width: 900px;
+  }
+
+  .Recipeform {
+    width: 800px;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  h4 {
+    font-size: 1.3rem;
+  }
+
+  #ingredients {
+    border-radius: 0.4rem;
+    height: 3.2rem;
+    width: 660px;
+    margin: 0;
+    margin-left: 4rem;
+  }
+
+  .bottomtext {
+    width: 700px;
+    padding-bottom: 4rem;
+    justify-self: center;
+  }
+
+  .sub {
+    padding-top: 1.4rem;
+  }
+
+  .namedish {
+    padding: 1rem;
+    padding-left: 4rem;
+    padding-top: 2rem;
+  }
+
+  .ahhh3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .instruction {
+    width: 350px;
+  }
+
+  ul {
+    font-size: 1.3rem;
+  }
+
+  .lorem {
+    width: 360px;
+  }
+
+  .exampleimage {
+    width: 550px;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    margin-top: 3rem;
+  }
+
+  .pizza {
+    width: 600px;
+    padding-bottom: 3rem;
+  }
+
+  .button {
+    height: 4.5rem;
+    width: 280px;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    border-radius: 4rem;
+  }
 }
