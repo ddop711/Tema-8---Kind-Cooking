@@ -30,6 +30,13 @@ h1 {
   color: white;
   padding: 10px;
   border-radius: 5px;
+  color: black;
+}
+
+.section-title p {
+  background-color: #d9b2a9;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .ingredients ul {
