@@ -1,7 +1,6 @@
 const container = document.getElementById("recipes-container");
 let allRecipes = [];
 
-// Hent opskrifter
 fetch("https://dummyjson.com/recipes")
   .then((res) => res.json())
   .then((data) => {
@@ -10,7 +9,6 @@ fetch("https://dummyjson.com/recipes")
     displayRecipes(allRecipes);
   });
 
-// Vis opskrifter
 function displayRecipes(list) {
   container.innerHTML = "";
   list.forEach((recipe) => {
@@ -28,7 +26,6 @@ function displayRecipes(list) {
   });
 }
 
-// Opret filtre - simpel version
 function createFilterOptions(recipes) {
   const difficultyContainer = document.getElementById("difficulty-filters");
   const cuisineContainer = document.getElementById("cuisine-filters");
@@ -36,23 +33,18 @@ function createFilterOptions(recipes) {
   let difficulties = [];
   let cuisines = [];
 
-  // Lav unikke lister
   recipes.forEach((r) => {
     if (!difficulties.includes(r.difficulty)) difficulties.push(r.difficulty);
     if (!cuisines.includes(r.cuisine)) cuisines.push(r.cuisine);
   });
 
-  // Lav HTML for difficulty
   difficultyContainer.innerHTML = difficulties.map((d) => `<label><input type="checkbox" value="${d}" class="filter-difficulty"> ${d}</label>`).join("");
 
-  // Lav HTML for cuisine
   cuisineContainer.innerHTML = cuisines.map((c) => `<label><input type="checkbox" value="${c}" class="filter-cuisine"> ${c}</label>`).join("");
 
-  // Tilføj event listeners
   document.querySelectorAll(".filter-difficulty, .filter-cuisine").forEach((cb) => cb.addEventListener("change", updateFilters));
 }
 
-// Filtrering
 function updateFilters() {
   const selectedDifficulties = [...document.querySelectorAll(".filter-difficulty:checked")].map((cb) => cb.value);
   const selectedCuisines = [...document.querySelectorAll(".filter-cuisine:checked")].map((cb) => cb.value);
@@ -65,7 +57,6 @@ function updateFilters() {
   displayRecipes(filtered);
 }
 
-// Dropdown
 const filterButton = document.getElementById("filter-button");
 const filterDropdown = document.getElementById("filter-dropdown");
 filterButton.addEventListener("click", () => {
