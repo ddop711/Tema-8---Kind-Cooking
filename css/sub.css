@@ -42,6 +42,8 @@ p {
 }
 
 .cta button {
+  font-family: Afacad;
+  font-weight: 100;
   background-color: #e7e2dc;
   border: none;
   padding: 0.9rem 2rem;
