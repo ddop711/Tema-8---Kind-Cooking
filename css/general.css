@@ -1,3 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #000000;
+  --white: #fefbf6;
+  --brown: #9e7267;
+  --red: #d38275;
+  --green: #6a7865;
+}
+
 /**** FONT ****/
 
 .afacad-<uniquifier > {

@@ -1,0 +1,182 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: #f5f2ef;
+}
+
+header {
+  background: #6f7f68;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.top_bar img {
+  height: 40px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.burger {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  max-width: 100%;
+  box-sizing: border-box;
+  gap: 50px;
+}
+
+.intro-text {
+  max-width: 600px;
+}
+
+.intro-text h1 {
+  font-size: 42px;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.intro-text h2 {
+  font-size: 24px;
+  margin: 10px 0 0 0;
+  line-height: 1.2;
+}
+
+.intro-text p {
+  line-height: 1.5;
+}
+
+.intro-image img {
+  display: block;
+  height: 200px;
+  width: auto;
+  object-fit: cover;
+}
+
+#filters {
+  background: #9e7267;
+  padding: 15px;
+  position: relative;
+}
+
+#filter-button {
+  background: #6f7f68;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#filter-dropdown {
+  position: absolute;
+  top: 60px;
+  left: 15px;
+  background: #fefbf6;
+  padding: 15px;
+  border-radius: 8px;
+  display: none;
+  z-index: 10;
+}
+
+#recipes-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 20px;
+  margin-inline: 50px;
+}
+
+.card {
+  background: #c97c6d;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card h3 {
+  margin: 10px;
+  font-size: 16px;
+}
+
+.card p {
+  margin: 0 10px 10px;
+  font-size: 14px;
+}
+
+.card-img {
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+
+.recipe-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.difficulty-icon {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 35px;
+  height: 35px;
+  z-index: 5;
+  padding: 5px;
+}
+
+@media (min-width: 900px) {
+  #recipes-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #6f7f68;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+    display: none;
+  }
+
+  nav.active {
+    display: flex;
+  }
+}
