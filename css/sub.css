@@ -9,7 +9,7 @@
   padding: 2rem 1.2rem;
 }
 
-body {
+.flex {
   display: flex;
   justify-content: center;
   align-items: center;
