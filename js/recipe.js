@@ -10,13 +10,19 @@ fetch(`https://dummyjson.com/recipes/${id}`)
       <h1>${recipe.name}</h1>
       <img src="${recipe.image}" />
 
-      <div class="section-title">Ingredients</div>
-      <ul>
-        ${recipe.ingredients.map((i) => `<li>${i}</li>`).join("")}
-      </ul>
+      <div class="recipe-content">
+        <div class="ingredients">
+          <div class="section-title">Ingredients</div>
+          <ul>
+            ${recipe.ingredients.map((i) => `<li>${i}</li>`).join("")}
+          </ul>
+        </div>
 
-      <div class="section-title">Instructions</div>
-      <p>${recipe.instructions.join("<br><br>")}</p>
+        <div class="instructions">
+          <div class="section-title">Instructions</div>
+          <p>${recipe.instructions.join("<br><br>")}</p>
+        </div>
+      </div>
 
       <div class="section-title">Tags</div>
       <p>

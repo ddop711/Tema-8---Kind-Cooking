@@ -11,17 +11,26 @@ fetch("https://dummyjson.com/recipes")
 
 function displayRecipes(list) {
   container.innerHTML = "";
+
   list.forEach((recipe) => {
     const card = document.createElement("div");
     card.classList.add("card");
+
+    const difficultyIcon = recipe.difficulty === "Easy" ? `<img src="logo_and_icons/Group 11.webp" class="difficulty-icon" alt="Easy">` : recipe.difficulty === "Medium" ? `<img src="logo_and_icons/Group 12.webp" class="difficulty-icon" alt="Medium">` : "";
+
     card.innerHTML = `
-      <img src="${recipe.image}" alt="${recipe.name}" />
+      <div class="card-img">
+        ${difficultyIcon}
+        <img src="${recipe.image}" alt="${recipe.name}" class="recipe-img"/>
+      </div>
       <h3>${recipe.name}</h3>
       <p>${recipe.cuisine}</p>
     `;
+
     card.addEventListener("click", () => {
       window.location.href = `recipe.html?id=${recipe.id}`;
     });
+
     container.appendChild(card);
   });
 }
@@ -61,4 +70,12 @@ const filterButton = document.getElementById("filter-button");
 const filterDropdown = document.getElementById("filter-dropdown");
 filterButton.addEventListener("click", () => {
   filterDropdown.style.display = filterDropdown.style.display === "block" ? "none" : "block";
+});
+
+// BURGER MENU
+const burger = document.getElementById("burger");
+const navMenu = document.getElementById("nav-menu");
+
+burger.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
 });

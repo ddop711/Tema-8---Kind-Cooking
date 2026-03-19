@@ -9,27 +9,54 @@
 </head>
 
 <body>
+
     <header>
-        <h1>Kind Cooking</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aperiam, assumenda tempore ex voluptatum
-            blanditiis a. Vero deleniti, eius deserunt voluptatum at aspernatur commodi magni nihil exercitationem
-            voluptatibus porro et!</p>
+        <div class="top_bar">
+            <a href="index.html">
+                <img src="logo_and_icons/Group 6.webp" alt="">
+            </a>
+        </div>
+
+        <div class="burger" id="burger">☰</div>
+
+        <nav id="nav-menu">
+            <a href="about_us.html">about us</a>
+            <a href="share_your_own_recipes.html">share your own recipes</a>
+            <a href="subscribe.html">subscribe</a>
+        </nav>
     </header>
 
+    <div class="intro">
+        <div class="intro-text">
+            <h1>Kind Cooking</h1>
+            <h2>Hi there!</h2>
+            <p>
+                Welcome to the “Kind Cooking” website, where we share delicious recipes
+                for you to try. Learning how to cook can feel like a daunting task when
+                you’re doing it alone, so let’s learn together!
+            </p>
+        </div>
+        <div class="intro-image">
+            <img src="logo_and_icons/Group 6.webp" alt="Intro Image">
+        </div>
+    </div>
 
     <div id="filters">
         <button id="filter-button">Filtrér</button>
+
         <div id="filter-dropdown">
             <div>
                 <h4>Difficulty</h4>
                 <div id="difficulty-filters"></div>
             </div>
+
             <div>
                 <h4>Cuisine</h4>
                 <div id="cuisine-filters"></div>
             </div>
         </div>
     </div>
+
 
     <main id="recipes-container"></main>
 
