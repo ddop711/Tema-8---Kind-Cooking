@@ -24,11 +24,18 @@ fetch(`https://dummyjson.com/recipes/${id}`)
         </div>
       </div>
 
-      <div class="section-title">Tags</div>
+      <div class="section-title">Tags:
       <p>
         Meal type: ${recipe.mealType} <br>
         Difficulty: ${recipe.difficulty} <br>
         Cuisine: ${recipe.cuisine}
       </p>
+      </div>
     `;
   });
+const burger = document.getElementById("burger");
+const navMenu = document.getElementById("nav-menu");
+
+burger.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+});

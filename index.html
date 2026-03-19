@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kind Cooking</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/general.css">
 </head>
 
 <body>
@@ -13,16 +14,16 @@
     <header>
         <div class="top_bar">
             <a href="index.html">
-                <img src="logo_and_icons/Group 6.webp" alt="">
+                <img src="logo_and_icons/Group 6.webp" alt="logo">
             </a>
         </div>
 
         <div class="burger" id="burger">☰</div>
 
         <nav id="nav-menu">
-            <a href="about_us.html">about us</a>
-            <a href="share_your_own_recipes.html">share your own recipes</a>
-            <a href="subscribe.html">subscribe</a>
+            <a href="about_us.html">About us</a>
+            <a href="share_your_own_recipes.html">Share your own recipes</a>
+            <a href="subscribe.html">Subscribe</a>
         </nav>
     </header>
 
@@ -42,7 +43,7 @@
     </div>
 
     <div id="filters">
-        <button id="filter-button">Filtrér</button>
+        <button id="filter-button"><img src="logo_and_icons/filter_logo.webp" alt="filter"></button>
 
         <div id="filter-dropdown">
             <div>
@@ -55,11 +56,32 @@
                 <div id="cuisine-filters"></div>
             </div>
         </div>
+        <input type="search" id="searchbar" placeholder=" Search...">
+    </div>
+    <div class="icons_container">
+        <img src="logo_and_icons/Group 11.webp" alt="easy">
+        <p> · Easy</p>
+        <img src="logo_and_icons/Group 12.webp" alt="medium">
+        <p> · Medium</p>
     </div>
 
 
     <main id="recipes-container"></main>
 
+    <footer>
+        <div>
+            <h2>Contacts & Address</h2>
+            <p>Address: Guldbergsgade 29N, 2200 København</p>
+            <p>Phone number: 46 46 00 00</p>
+            <p>E-mail: ek@ek.dk</p>
+        </div>
+        <div>
+            <h2>Opening hours</h2>
+            <p>Monday - Friday: 9.00 - 15.00</p>
+            <p>Saturday - Sunday: Closed</p>
+        </div>
+
+    </footer>
     <script src="js/index.js"></script>
 </body>
 

@@ -4,37 +4,6 @@ body {
   background: #f5f2ef;
 }
 
-header {
-  background: #6f7f68;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 20px;
-  position: relative;
-}
-
-.top_bar img {
-  height: 40px;
-}
-
-nav {
-  display: flex;
-  gap: 20px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.burger {
-  display: none;
-  font-size: 28px;
-  color: white;
-  cursor: pointer;
-}
-
 .intro {
   display: flex;
   justify-content: center;
@@ -43,6 +12,7 @@ nav a {
   max-width: 100%;
   box-sizing: border-box;
   gap: 50px;
+  font-family: "Handlee", cursive;
 }
 
 .intro-text {
@@ -76,15 +46,22 @@ nav a {
   background: #9e7267;
   padding: 15px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding-inline: 5vw;
 }
 
 #filter-button {
-  background: #6f7f68;
   color: white;
   border: none;
-  padding: 10px 15px;
   border-radius: 6px;
   cursor: pointer;
+}
+#filter-button img {
+  max-height: 40px;
+  display: block;
 }
 
 #filter-dropdown {
@@ -98,12 +75,40 @@ nav a {
   z-index: 10;
 }
 
+#searchbar {
+  border-radius: 10px;
+  height: 40px;
+  width: 100%;
+}
+
+.icons_container {
+  background-color: #9e7267;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.icons_container p {
+  padding-left: 5px;
+  margin-right: 50px;
+  color: white;
+  font-weight: 100;
+}
+.icons_container img {
+  background-color: #9e7267;
+  width: auto;
+  height: 40px;
+  gap: 10px;
+}
+
 #recipes-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
   padding: 20px;
-  margin-inline: 50px;
+  margin-inline: 2vw;
 }
 
 .card {
@@ -146,8 +151,8 @@ nav a {
   position: absolute;
   bottom: 10px;
   left: 10px;
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: auto;
   z-index: 5;
   padding: 5px;
 }
@@ -155,28 +160,5 @@ nav a {
 @media (min-width: 900px) {
   #recipes-container {
     grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .burger {
-    display: block;
-  }
-
-  nav {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background: #6f7f68;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    padding: 20px 0;
-    display: none;
-  }
-
-  nav.active {
-    display: flex;
   }
 }
